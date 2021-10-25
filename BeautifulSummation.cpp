@@ -1,5 +1,13 @@
 //Me: 0 points and TLE, but converted to Python by Jake [bottom of page]:
 
+/*
+With the excessive number of optimizing for multiplying two numbers, 
+for the powering of (base, exponent) won't be enough. The issue will be
+figuring out an algorithmic way to reduce the number of trials in the 
+summation itself. Possibly figuring out a pattern with the pairs (p,q)
+and pre-computing those common values which reduces the trials.
+*/
+
 #include <iostream>
 
 const long long int MOD = 1e9 + 7;
@@ -40,6 +48,7 @@ long long int RussianPeasantAlgo (long long int a, long long int b)
 }
 
 /*
+//Faster way of multiplying but doesn't matter because it'll still TLE.
 long long int Karatsuba(long long int x, long long int y)
 {
     if (x < 10 && y < 10)
@@ -104,7 +113,12 @@ int main()
 
 ——————————————————————————————————————————
 
-#Optimized Solution (Me and Jake): 13 points
+"""
+Optimized Solution (Me and Jake): 13 points
+Same strategy, but computing the powers with strings instead
+by storing it in a container and you access it's indices. Instead
+of applying Binary Expo on this one, we did Modular Expo (built-in Fermat).
+"""
 
 from fractions import Fraction
 
