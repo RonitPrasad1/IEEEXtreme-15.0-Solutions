@@ -107,7 +107,7 @@ def do_calculate(s):
             stack.append(-num)
         if sign == '*':
             stack[-1] *= num
-        if sign == '/':
+            
             stack[-1] = int(stack[-1] / num)
 
     while c := next(s):
@@ -118,7 +118,7 @@ def do_calculate(s):
         elif c in ')$':
             calculate_top()
             return sum(stack)
-        elif c in '+-*/':
+        elif c in '+-*':
             calculate_top()
             sign = c
 
