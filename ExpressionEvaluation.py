@@ -1,5 +1,10 @@
 #Jacob and Me: 34 points
 
+"""
+Applied same solution in C++, but was getting a SIGSEGV error, so 
+gave this to Jav so he can optimize/manipulate it in Python.
+"""
+
 import re
 
 def seperate_string_number(string):
