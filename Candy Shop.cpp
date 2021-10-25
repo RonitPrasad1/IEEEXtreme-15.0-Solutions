@@ -16,7 +16,7 @@ int main()
     for (int i = 0; i < n; ++i)
     {
         std::cin >> a >> b;
-        if ((b == k || k == b))
+        if ( (b == k || k == b) )
         {
             ++counter1;
         }
