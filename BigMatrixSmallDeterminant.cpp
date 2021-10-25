@@ -1,6 +1,5 @@
 //Me: 23 points
 
-//Complexity: O(n)
 #include <iostream>
 #include <string>
 #include <algorithm>
