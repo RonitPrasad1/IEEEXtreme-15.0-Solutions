@@ -1,4 +1,5 @@
-# IEEEXtreme-15.0-Solutions
+# IEEEXtreme-15.0-Solutions : 24-hour competitive programming competition
+
 Our solutions to the questions we tried and solved. Mostly team collaborations on the problems, except for a couple of them.
 
 Team Name: CUCBatImmortals
